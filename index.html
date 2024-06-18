@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href=""><img src="assets/img/Untitled-1.png" alt=""></a>
+            </div>
+
+
+
+            <div class="search-container">
+                <input class="search" type="text" placeholder="اینجا سرچ کنید ....">
+                <i></i>
+
+            </div>
+
+            <div class="login">
+                <a href=""><span>ورود / ثبت نام</span><svg fill="#000000" width="40px" height="40px" viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+
+                            <path
+                                d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z" />
+
+                        </g>
+
+                    </svg></a>
+            </div>
+
+
+            <div class="links">
+                <button onclick="changemenu()"><svg width="35px" height="35px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g id="Menu / Close_LG">
+                                <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001"
+                                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </g>
+                    </svg></button>
+                <a class="link" href="">گالری</a>
+                <a class="link" href="">فروش ویژه</a>
+                <a class="link" href="">درباره ما</a>
+                <a class="link" href="">نمایندگی ها</a>
+                <a class="link" href="">گفت و گو</a>
+            </div>
+
+
+            <label id="b-menu" class="hamburger-menu" for="burger-menu" onclick="changemenu()">
+                <svg class="open" width="50px" height="50px" viewBox="0 0 24 24" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                    <g id="SVGRepo_iconCarrier">
+                        <title>Menu</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Menu">
+                                <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"> </rect>
+                                <line x1="5" y1="7" x2="19" y2="7" id="Path" stroke="#0C0310" stroke-width="2"
+                                    stroke-linecap="round"> </line>
+                                <line x1="5" y1="17" x2="19" y2="17" id="Path" stroke="#0C0310" stroke-width="2"
+                                    stroke-linecap="round"> </line>
+                                <line x1="5" y1="12" x2="19" y2="12" id="Path" stroke="#0C0310" stroke-width="2"
+                                    stroke-linecap="round"> </line>
+                            </g>
+                        </g>
+                    </g>
+
+                </svg></label>
+            <input id="burger-menu" type="checkbox">
+
+
+
+
+
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="filter-icon" onclick="openfilter()">
+            <span>فیلتر ها</span>
+            <svg fill="#000000" width="40px" height="40px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"
+                transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path
+                        d="m0 .011 741.97 984.808v673.566l502.665 251.332V984.82l675.332-896.544-88.154-66.308-697.508 925.891v783.345L852.301 1590.2V947.858L221.322 110.341h1262.289V.011z"
+                        fill-rule="evenodd"></path>
+                </g>
+            </svg>
+        </div>
+
+        <section class="cards">
+
+
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/m.png" alt="">
+                </div>
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/GR.png" alt="">
+                </div>
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+
+                <div class="card-info">
+                    <div class="title">
+                        <span>گوشوار مروارید</span>
+
+                    </div>
+
+                    <div class="comment">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </div>
+
+                    <div class="action">
+                        <div class="price">
+                            <span>10.000.000 ریال</span>
+                        </div>
+
+                        <button class="cart-button">
+                            <span>اطلاعات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <section class="filter" id="blf">
+
+            <!-- <div class="search br">
+                <input class="search-input" type="text" placeholder="نام محصول مورد نظر را وارد کنید">
+                <button type="button"><svg width="40px" height="40px" viewBox="-11.04 -11.04 46.08 46.08" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.0392 15.6244C18.2714 14.084 19.0082 12.1301 19.0082 10.0041C19.0082 5.03127 14.9769 1 10.0041 1C5.03127 1 1 5.03127 1 10.0041C1 14.9769 5.03127 19.0082 10.0041 19.0082C12.1301 19.0082 14.084 18.2714 15.6244 17.0392L21.2921 22.707C21.6828 23.0977 22.3163 23.0977 22.707 22.707C23.0977 22.3163 23.0977 21.6828 22.707 21.2921L17.0392 15.6244ZM10.0041 17.0173C6.1308 17.0173 2.99087 13.8774 2.99087 10.0041C2.99087 6.1308 6.1308 2.99087 10.0041 2.99087C13.8774 2.99087 17.0173 6.1308 17.0173 10.0041C17.0173 13.8774 13.8774 17.0173 10.0041 17.0173Z"
+                                fill="#0F0F0F"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div> -->
+
+
+            <div class="close-filter" onclick="closefilter()"><svg width="35px" height="35px" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g id="Menu / Close_LG">
+                            <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </svg></div>
+
+
+
+            <div class="category flex">
+
+                <div id="mainprod">
+                    <span class="p color" onclick="mainprodjs()">محصولات <i class="arrow"></i></span>
+
+                    <div class="flex subprod">
+                        <span class="center-arrow sp">مردانه<i class="arrow2"></i></span>
+                    <a href="">دستن بند  1</a>
+                    <a href="">دست بند  2</a>
+                    <a href=""> 3دست بند </a>
+                    <a href=""> 4دست بند </a>
+                    <a href=""> 5دست بند </a>
+                    <a href=""> دست بند 6</a>
+                        
+
+
+
+                    </div>
+
+                    <div class="flex subprod">
+                        <span class="center-arrow sp">زنانه<i class="arrow2"></i></span>
+                        <a href="">دستن بند  1</a>
+                    <a href="">دست بند  2</a>
+                    <a href=""> 3دست بند </a>
+                    <a href=""> 4دست بند </a>
+                    <a href=""> 5دست بند </a>
+                    <a href=""> دست بند 6</a>
+
+
+                    </div>
+
+
+
+                    <div class="flex subprod">
+                        <span class="center-arrow sp">بچه گانه<i class="arrow2"></i></span>
+                        <a href="">دستن بند  1</a>
+                    <a href="">دست بند  2</a>
+                    <a href=""> 3دست بند </a>
+                    <a href=""> 4دست بند </a>
+                    <a href=""> 5دست بند </a>
+                    <a href=""> دست بند 6</a>
+
+                    </div>
+
+
+                    <div class="flex subprod">
+                        <span class="center-arrow sp">ست ها<i class="arrow2"></i></span>
+                        <a href="">دستن بند  1</a>
+                        <a href="">دست بند  2</a>
+                        <a href=""> 3دست بند </a>
+                        <a href=""> 4دست بند </a>
+                        <a href=""> 5دست بند </a>
+                        <a href=""> دست بند 6</a>
+
+
+                    </div>
+                </div>
+                <div class="flex prod open">
+                    <span class="center-arrow msp color">نمایندگی ها<i class="arrow"></i></span>
+                    <li><label for="aa">پارسه</label><input id="aa" type="checkbox"></li>
+                    <li><label for="bb">پاسارگاد</label><input id="bb" type="checkbox"></li>
+                    <li><label for="cc">طلا ایران</label><input id="cc" type="checkbox"></li>
+                    <li><label for="dd">طلاجو</label><input id="dd" type="checkbox"></li>
+                </div>
+                <div class="flex prod open">
+                    <span class="center-arrow msp  color">برند ها<i class="arrow"></i></span>
+                    <li><label for="ee">دستبند 1</label><input id="ee"  type="checkbox"></li>
+                    <li><label for="ff">دستبند 2</label><input id="ff" type="checkbox"></li>
+                    <li><label for="gg">دستبند 3</label><input id="gg" type="checkbox"></li>
+                    <li><label for="hh">دستبند 4</label><input id="hh" type="checkbox"></li>
+                    <li><label for="ii">دستبند 5</label><input id="ii" type="checkbox"></li>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="city">
+                <select name="state" onChange="iranwebsv(this.value);">
+                    <option value="0">لطفا استان را انتخاب نمایید</option>
+                    <option value="1">تهران</option>
+                    <option value="2">گیلان</option>
+                    <option value="3">آذربایجان شرقی</option>
+                    <option value="4">خوزستان</option>
+                    <option value="5">فارس</option>
+                    <option value="6">اصفهان</option>
+                    <option value="7">خراسان رضوی</option>
+                    <option value="8">قزوین</option>
+                    <option value="9">سمنان</option>
+                    <option value="10">قم</option>
+                    <option value="11">مرکزی</option>
+                    <option value="12">زنجان</option>
+                    <option value="13">مازندران</option>
+                    <option value="14">گلستان</option>
+                    <option value="15">اردبیل</option>
+                    <option value="16">آذربایجان غربی</option>
+                    <option value="17">همدان</option>
+                    <option value="18">کردستان</option>
+                    <option value="19">کرمانشاه</option>
+                    <option value="20">لرستان</option>
+                    <option value="21">بوشهر</option>
+                    <option value="22">کرمان</option>
+                    <option value="23">هرمزگان</option>
+                    <option value="24">چهارمحال و بختیاری</option>
+                    <option value="25">یزد</option>
+                    <option value="26">سیستان و بلوچستان</option>
+                    <option value="27">ایلام</option>
+                    <option value="28">کهگلویه و بویراحمد</option>
+                    <option value="29">خراسان شمالی</option>
+                    <option value="30">خراسان جنوبی</option>
+                    <option value="31">البرز</option>
+                </select>
+                <select name="city" id="city">
+                    <option value="0">لطفا استان را انتخاب نمایید</option>
+                </select>
+            </div>
+
+
+
+            <div class="available">
+
+                <h3>نمایش کالاهای موجود:</h3>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+
+
+
+
+            <div class="groups br">
+                <label for="shopgroup">مرتب سازی بر اساس:</label>
+                <select name="" id="shopgroup">
+                    <option value="">کمترین به بیشترین</option>
+                    <option value="">بیشترین به کمترین</option>
+                    <option value=""> پر بازدید ترین</option>
+                    <option value="">پر فروش ترین</option>
+                </select>
+            </div>
+
+            <div class="priice">
+                <div class="double_range_slider_box">
+                    <div class="double_range_slider">
+                        <span class="range_track" id="range_track"></span>
+
+                        <input type="range" class="min r" min="0" max="100" value="0" step="0">
+                        <input type="range" class="max r" min="0" max="100" value="90" step="0">
+                        <div class="price-input">
+                            <div class="m"><span>میلیون تومان</span><input onchange="inputvalm(value)" type="text"
+                                    class="minvalue"><span>از</span>
+                            </div>
+                            <div class="m"><span>میلیون تومان</span><input onchange="inputvalM(value)" type="text"
+                                    class="maxvalue"><span>تا</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filter-button"><button type="submit">اعمال فیلتر</button></div>
+
+
+
+
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <nav class="footer">
+            <div class="law">* تمامی حقوق برای این وبسایت محفوظ است . کپی به هر شکل غیر مجاز و غیر قانونی است.</div>
+            <!-- <div class="footer-items">
+                <a class="item" href="">تماس با ما</a>
+                <a class="item" href="">گفتگوی آنلاین</a>
+                <a class="item" href="">سوابق</a>
+                <a id="back" href=""><i class="fa-solid fa-arrow-up fa-2xl"></i></a>
+            </div> -->
+
+        </nav>
+    </footer>
+
+
+    <script src="index.js">
+    </script>
+    <script src="search.js"></script>
+</body>
+
+</html>
