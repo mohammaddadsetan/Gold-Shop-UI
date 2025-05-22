@@ -15,7 +15,7 @@ To run the application, simply open the `index.html` file in your browser.
 ## Live Demo
 
 You can view the project live on GitHub Pages:  
-(https://mohammaddadsetan.github.io/recipe-page-frontendmentor/)
+(https://mohammaddadsetan.github.io/Gold-Shop-UI/)
 
 ## Installation
 
