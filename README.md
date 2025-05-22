@@ -12,6 +12,11 @@ Welcome to the **Gold Project**! This project is an educational platform I desig
 
 To run the application, simply open the `index.html` file in your browser.
 
+## Live Demo
+
+You can view the project live on GitHub Pages:  
+(https://mohammaddadsetan.github.io/recipe-page-frontendmentor/)
+
 ## Installation
 
 1. Clone the repository:
