@@ -8,16 +8,16 @@ function changemenu() {
 
 
 
-    if (sidemenu.style.width == 0) {
+    if (sidemenu.style.width == 10 + "em") {
 
+       sidemenu.style.width =0 + "px";
        
-        sidemenu.style.width = 10 + "em";
 
     }
 
     else {
         
-        sidemenu.style.width =0;
+        sidemenu.style.width = 10 + "em";
     }
 
 

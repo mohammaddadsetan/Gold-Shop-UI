@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -26,7 +26,7 @@
 
             </div>
 
-            <div class="login">
+            <div class="login tr-hover">
                 <a href=""><span>ورود / ثبت نام</span><svg fill="#000000" width="40px" height="40px" viewBox="0 0 32 32"
                         xmlns="http://www.w3.org/2000/svg">
 
@@ -46,7 +46,7 @@
 
 
             <div class="links">
-                <button onclick="changemenu()"><svg width="35px" height="35px" viewBox="0 0 24 24" fill="none"
+                <button class="tr-hover" onclick="changemenu()"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -66,7 +66,7 @@
             </div>
 
 
-            <label id="b-menu" class="hamburger-menu" for="burger-menu" onclick="changemenu()">
+            <label id="b-menu" class="hamburger-menu tr-hover" for="burger-menu" onclick="changemenu()">
                 <svg class="open" width="50px" height="50px" viewBox="0 0 24 24" version="1.1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
 
@@ -101,9 +101,9 @@
     </header>
 
     <main>
-        <div class="filter-icon" onclick="openfilter()">
+        <div class="filter-icon tr-hover" onclick="openfilter()">
             <span>فیلتر ها</span>
-            <svg fill="#000000" width="40px" height="40px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"
+            <svg fill="#000000" width="25px" height="25px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"
                 transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -649,23 +649,7 @@
 
         <section class="filter" id="blf">
 
-            <!-- <div class="search br">
-                <input class="search-input" type="text" placeholder="نام محصول مورد نظر را وارد کنید">
-                <button type="button"><svg width="40px" height="40px" viewBox="-11.04 -11.04 46.08 46.08" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M17.0392 15.6244C18.2714 14.084 19.0082 12.1301 19.0082 10.0041C19.0082 5.03127 14.9769 1 10.0041 1C5.03127 1 1 5.03127 1 10.0041C1 14.9769 5.03127 19.0082 10.0041 19.0082C12.1301 19.0082 14.084 18.2714 15.6244 17.0392L21.2921 22.707C21.6828 23.0977 22.3163 23.0977 22.707 22.707C23.0977 22.3163 23.0977 21.6828 22.707 21.2921L17.0392 15.6244ZM10.0041 17.0173C6.1308 17.0173 2.99087 13.8774 2.99087 10.0041C2.99087 6.1308 6.1308 2.99087 10.0041 2.99087C13.8774 2.99087 17.0173 6.1308 17.0173 10.0041C17.0173 13.8774 13.8774 17.0173 10.0041 17.0173Z"
-                                fill="#0F0F0F"></path>
-                        </g>
-                    </svg>
-                </button>
-            </div> -->
-
-
-            <div class="close-filter" onclick="closefilter()"><svg width="35px" height="35px" viewBox="0 0 24 24"
+            <div class="close-filter tr-hover" onclick="closefilter()"><svg width="35px" height="35px" viewBox="0 0 24 24"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -859,20 +843,16 @@
     <footer>
         <nav class="footer">
             <div class="law">* تمامی حقوق برای این وبسایت محفوظ است . کپی به هر شکل غیر مجاز و غیر قانونی است.</div>
-            <!-- <div class="footer-items">
-                <a class="item" href="">تماس با ما</a>
-                <a class="item" href="">گفتگوی آنلاین</a>
-                <a class="item" href="">سوابق</a>
-                <a id="back" href=""><i class="fa-solid fa-arrow-up fa-2xl"></i></a>
-            </div> -->
+           
 
         </nav>
     </footer>
 
 
-    <script src="index.js">
+    <script src="js/index.js">
     </script>
-    <script src="search.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/city.js"></script>
 </body>
 
 </html>
